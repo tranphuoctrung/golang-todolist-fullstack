@@ -1,0 +1,14 @@
+<div class="row">
+  <h2 class="text-center">{{title}}</h2>
+  <table class="table">
+    <tr *ngFor="let done of doneList; let i = index">
+      <td>{{done.id}}</td>
+      <td>{{done.name}}</td>
+      <td>
+        <button class="pull-right btn btn-default" (click)="deleleTodo(done, i)">
+          Delete
+        </button>
+      </td>
+    </tr>
+  </table>
+</div>
